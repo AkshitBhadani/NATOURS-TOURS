@@ -1,0 +1,18 @@
+extends base
+
+block content
+  main.main
+    .signup-form
+      h2.heading-secondary.ma-bt-lg Create your New Review
+      form.form.form--signup
+        .form__group
+          label.form__label(for='addreview') Review
+          input#email.form__input(type='text', placeholder='Add Review', required)
+          .form__group
+          label.form__label(for='rating') Rating
+          input#name.form__input(type='rating', placeholder='Rating', required)
+        .form__group.ma-bt-md
+          label.form__label(for='datetime') Date And Time
+          input#password.form__input(type='datetime', placeholder='••••••••', required, minlength='8')
+        .form__group
+          button.btn.btn--green Create Review
